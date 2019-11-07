@@ -1,0 +1,38 @@
+  <h2>collect data from rest api with get https://jsonplaceholder.typicode.com/todos</h2>
+<table  border="1px" cellspacing="0px" width="100%">
+    <tr>
+        <th>userid</th>
+        <th>id</th>
+        <th>titel</th>
+        <th>complted</th>
+    </tr>
+    <tr *ngFor="let datas of listdata">
+        <td>{{datas.userId}}</td>
+        <td>{{datas.id}}</td>
+        <td>{{datas.title}}</td>
+        <td>{{datas.completed}}</td>
+    </tr>
+</table>
+
+
+<h2>collect data with get by http params http://jsonplaceholder.typicode.com/posts?userId=1</h2>
+<table  border="1px" cellspacing="0px" width="100%">
+    <tr>
+        <th>userid</th>
+        <th>id</th>
+        <th>titel</th>
+        <th>complted</th>
+    </tr>
+    <tr *ngFor="let datas of listpost">
+        <td>{{datas.userId}}</td>
+        <td>{{datas.id}}</td>
+        <td>{{datas.title}}</td>
+        <td>{{datas.body}}</td>
+    </tr>
+</table>
+
+
+  <h2>fetch data through the post method from api</h2>
+     <p>my name:{{postdata.body}}</p>
+     <p>my id:{{postdata.id}}</p>
+     <p>my title:{{postdata.title}}</p>
